@@ -2,16 +2,16 @@
 class Mzap < Formula
   desc "Multiple target ZAP scanning / mzap is a tool for scanning N*N in ZAP."
   homepage "https://www.hahwul.com"
-  version "1.1.1"
+  version "1.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hahwul/mzap/releases/download/v1.1.1/mzap_1.1.1_darwin_amd64.tar.gz"
-    sha256 "79c2fa29ad8210d44e078037c79d07ead0cc0d0d3018b7af4b2aff1c90fb1c5b"
+    url "https://github.com/hahwul/mzap/releases/download/v1.1.2/mzap_1.1.2_darwin_amd64.tar.gz"
+    sha256 "e2ba61a1715ebcc6d1738bd89c372acee7b862acd327c701bcdafe55dc1ce55d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/hahwul/mzap/releases/download/v1.1.1/mzap_1.1.1_linux_amd64.tar.gz"
-      sha256 "9d2e03c7badefebed71e35ab64ec2cec428087f9ec7b45cbf0d667fd60d81efc"
+      url "https://github.com/hahwul/mzap/releases/download/v1.1.2/mzap_1.1.2_linux_amd64.tar.gz"
+      sha256 "688191c5d8abbd77ecd0f08690aa330368161647c7e2699fd7737a29724847a4"
     end
   end
 
