@@ -2,16 +2,25 @@
 class Mzap < Formula
   desc "Multiple target ZAP scanning / mzap is a tool for scanning N*N in ZAP."
   homepage "https://www.hahwul.com"
-  version "1.1.3"
+  version "1.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hahwul/mzap/releases/download/v1.1.3/mzap_1.1.3_darwin_amd64.tar.gz"
-    sha256 "e934594d7369134c7c5370bd2a34074d219345aeeb605b1560214ec318e30194"
+    url "https://github.com/hahwul/mzap/releases/download/v1.1.4/mzap_1.1.4_darwin_amd64.tar.gz"
+    sha256 "144930e82e7d5fac9b8240aa0f68d0dae8443793b13344200427b4349c033c5d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/hahwul/mzap/releases/download/v1.1.3/mzap_1.1.3_linux_amd64.tar.gz"
-      sha256 "9195ba71ebea694d0c273d893bda98ac02f30b051f6160d5014c97113aea8570"
+      url "https://github.com/hahwul/mzap/releases/download/v1.1.4/mzap_1.1.4_linux_amd64.tar.gz"
+      sha256 "c838d84f6af58d7f5cea08ac45cf94596fcc4ca8d7b6b7d127546df4889006bc"
+    end
+    if Hardware::CPU.arm?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/hahwul/mzap/releases/download/v1.1.4/mzap_1.1.4_linux_arm64.tar.gz"
+        sha256 "af9117eaa873ff682b1d8b3a96d429d7fb03dbb39e64a181b5a9aaaa115ac7a0"
+      else
+        url "https://github.com/hahwul/mzap/releases/download/v1.1.4/mzap_1.1.4_linux_armv6.tar.gz"
+        sha256 "8b32ad4d4454ce54f52df3ec69d83bbfcc61dbb9686544c45d94c49cab848e24"
+      end
     end
   end
 
