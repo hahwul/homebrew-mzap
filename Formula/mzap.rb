@@ -5,20 +5,20 @@
 class Mzap < Formula
   desc "Multiple target ZAP scanning / mzap is a tool for scanning N*N in ZAP."
   homepage "https://www.hahwul.com"
-  version "1.3.0"
+  version "1.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hahwul/mzap/releases/download/v1.3.0/mzap_1.3.0_darwin_arm64.tar.gz"
-      sha256 "8b7ce636af97c3ce019bc135a62b1d9fc3404f47f6e51f013f600ce158ad0836"
+      url "https://github.com/hahwul/mzap/releases/download/v1.3.1/mzap_1.3.1_darwin_arm64.tar.gz"
+      sha256 "93367b7b7250a238479463aa6890df36853c0767d18176af0b32cbe7532bd71e"
 
       def install
         bin.install "mzap"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hahwul/mzap/releases/download/v1.3.0/mzap_1.3.0_darwin_amd64.tar.gz"
-      sha256 "3d6a03ca542271798be2594be272d2b1aca6c7871d5f22dd6af9c2e7910ec710"
+      url "https://github.com/hahwul/mzap/releases/download/v1.3.1/mzap_1.3.1_darwin_amd64.tar.gz"
+      sha256 "193d3929c0019295d415f61a7ccc79f0d171c1791072fffd6186847ed8824909"
 
       def install
         bin.install "mzap"
@@ -28,24 +28,24 @@ class Mzap < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/hahwul/mzap/releases/download/v1.3.0/mzap_1.3.0_linux_armv6.tar.gz"
-      sha256 "bfcef63b5c732561e06fffff29b90ccf9afbe6390ac904436ed23f4f5d818b81"
+      url "https://github.com/hahwul/mzap/releases/download/v1.3.1/mzap_1.3.1_linux_armv6.tar.gz"
+      sha256 "3d571e4ed5f4cbf76449f56bbb6018d3c6c4049ad4848dc064123c90439c9b36"
 
       def install
         bin.install "mzap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hahwul/mzap/releases/download/v1.3.0/mzap_1.3.0_linux_arm64.tar.gz"
-      sha256 "0cb20dfa9c2e2da7d4ff6f228309d2fb0990d584537a9a7c577cceb710bb82aa"
+      url "https://github.com/hahwul/mzap/releases/download/v1.3.1/mzap_1.3.1_linux_arm64.tar.gz"
+      sha256 "fb489c85b8d5893078cfce5326e49ebb53a180dd6db691292b59296b26bdeb46"
 
       def install
         bin.install "mzap"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hahwul/mzap/releases/download/v1.3.0/mzap_1.3.0_linux_amd64.tar.gz"
-      sha256 "12130d2625aa2572da729e7fc65bcd766e0c6e49f476e066c1836b1c03d071d2"
+      url "https://github.com/hahwul/mzap/releases/download/v1.3.1/mzap_1.3.1_linux_amd64.tar.gz"
+      sha256 "732a5750cc3fad324db6b4a5dc87b5f9523c546e5d2ece84c08b3af4f558bc77"
 
       def install
         bin.install "mzap"
