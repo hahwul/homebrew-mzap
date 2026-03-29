@@ -5,8 +5,8 @@
 class Mzap < Formula
   desc "Multiple target zap scanning"
   homepage "https://github.com/hahwul/mzap"
-  url "https://github.com/hahwul/mzap/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "c26293dba9740dc68b96b01f3914452026a771d3d2759da2aa27ea814d448edc"
+  url "https://github.com/hahwul/mzap/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "d5b0939efbfe9ada4384a938641a8d5f470bfb7b08c79c3e49a2b45d1dcde24d"
   license "MIT"
 
   depends_on "crystal"
